@@ -1,17 +1,73 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-# Custom for Visual Studio
-*.cs     diff=csharp
+namespace Dog_Test
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello, Welcome to my world. Please type your name...");
+            String userValue = Console.ReadLine();
+            for (int I = 0; I < 10; I++)
+            {
+                Console.WriteLine("Hello, " + userValue + " Would you like to know the future?");
+                Console.WriteLine("Please answer Y or N");
 
-# Standard to msysgit
-*.doc	 diff=astextplain
-*.DOC	 diff=astextplain
-*.docx diff=astextplain
-*.DOCX diff=astextplain
-*.dot  diff=astextplain
-*.DOT  diff=astextplain
-*.pdf  diff=astextplain
-*.PDF	 diff=astextplain
-*.rtf	 diff=astextplain
-*.RTF	 diff=astextplain
+                String userAnswer = Console.ReadLine();
+
+                String message = "";
+
+
+                if (userAnswer == "Y")
+                {
+                    I = 10;
+                    message = userValue + " will soon wish they hadn't wasted their precious time on such a pointless application.";
+                    Console.WriteLine(message);
+                    Console.ReadLine();
+                    break;
+
+                }
+
+
+                else if (userAnswer == "N")
+                {
+                    
+                    message = "Whats wrong " + userValue + ", Do you really want to leave things up to fate?";
+                    Console.WriteLine(message);
+                    Console.ReadLine();
+                    
+                }
+
+                else
+                  if (I == 0)
+                    message = "Sorry, I do not understand.";
+             
+            }
+            Console.WriteLine("End of App");
+            Console.ReadLine();
+        }
+           
+        
+      
+                //Console.WriteLine(message);
+                //Console.ReadLine();
+                
+                //    Console.WriteLine("Are you amazed by my miraculous future telling abilitys " + userValue + "?");
+                //    Console.ReadLine();
+
+
+
+
+                }
+
+
+
+
+
+
+
+
